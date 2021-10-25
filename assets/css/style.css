@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'SignPainter Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('SignPainter Medium'), url('../fonts/SignPainterHouseScript.woff') format('woff');
+}
+@font-face {
+  font-family: 'DINCondensedBold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINCondensedBold'), url('../fonts/DINCondensed-Bold.ttf') format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+  background-color: #C70039;
+  color: #C70039;
+  text-align: center;
+}
+.outer-circle {
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: 90vw;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.inner-circle {
+  width: 82vw;
+  height: 82vw;
+  margin: 0 auto;
+  position: relative;
+  top: 4vw;
+  border: 3px solid #C70039;
+  border-radius: 50%;
+}
+.logo-icon {
+  margin-top: 10%;
+  width: 26vw;
+  height: auto;
+}
+.title {
+  font-family:'SignPainter Medium';
+  font-weight:normal;
+  font-size:12vw;
+  letter-spacing: 3.8px;
+  margin-top: 4vw;
+  margin-bottom: 6vw;
+}
+.subtitle {
+  font-family:'DINCondensedBold';
+  font-weight:normal;
+  font-size:4.5vw;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.soon {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  letter-spacing: 2px;
+  font-family:'SignPainter Medium';
+  font-weight:normal;
+  color: #fff;
+  font-size:6vw;
+  line-height: 12vw;
+  margin: 0;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .title {
+    font-size:6vw;
+    letter-spacing: 3.8px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+  .subtitle {
+    font-size:2.8vw;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .outer-circle {
+    width: 60vw;
+    height: 60vw;
+  }
+  .inner-circle {
+    width: 56vw;
+    height:56vw;
+    top: 2vw;
+  }
+  .soon {
+    font-size:4vw;
+    line-height: 8vw;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .outer-circle {
+    width: 30vw;
+    height: 30vw;
+  }
+  .inner-circle {
+    width: 28vw;
+    height: 28vw;
+    top: 1vw;
+  }
+  .logo-icon {
+    width: 8vw;
+  }
+  .title {
+    font-size:4.4vw;
+    letter-spacing: 3.8px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+  .subtitle {
+    font-size:1.7vw;
+  }
+  .soon {
+    font-size:3vw;
+    line-height: 6vw;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .outer-circle {
+    width: 30vw;
+    height: 30vw;
+  }
+  .inner-circle {
+    width: 28vw;
+    height: 28vw;
+  }
+  .logo-icon {
+    width: 8vw;
+  }
+  .title {
+    font-size:4.4vw;
+    letter-spacing: 3.8px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+  .subtitle {
+    font-size:1.7vw;
+  }
+  .soon {
+    font-size:2vw;
+    line-height: 4vw;
+  }
+}
